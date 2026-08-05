@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asrita Doddi — Healthcare Technology Researcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">AD</span>
+      <span class="logo-name">Asrita Doddi</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#biography"><span class="nav-index">01</span>Biography</a>
+      <a href="#advancements"><span class="nav-index">02</span>Advancements</a>
+      <a href="#research"><span class="nav-index">03</span>Research</a>
+      <a href="#contact"><span class="nav-index">04</span>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Healthcare Technology Researcher</p>
+      <h1 class="hero-name">Asrita<br><span>Doddi</span></h1>
+      <p class="hero-sub">
+        I study the systems where medicine meets machine intelligence —
+        from diagnostic algorithms that read a scan, to the infrastructure
+        that decides whether a hospital can trust its own data.
+      </p>
+      <div class="hero-actions">
+        <a href="#research" class="btn btn-primary">View Research</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- signature vital-sign trace -->
+    <div class="pulse-wrap" aria-hidden="true">
+      <svg class="pulse-line" viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <polyline points="0,40 140,40 165,10 190,70 215,5 240,75 265,40 420,40 445,20 470,40 1200,40" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============ 01 BIOGRAPHY ============ -->
+  <section class="section" id="biography">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-number">01</span>
+        <div>
+          <p class="eyebrow">Background</p>
+          <h2>Biography &amp; Research Focus</h2>
+        </div>
+      </div>
+
+      <div class="bio-grid">
+        <div class="bio-text">
+          <p>
+            I'm a researcher working at the intersection of biomedical
+            engineering and applied machine learning. My work centers on
+            building tools that make healthcare technology more precise,
+            more transparent, and more trustworthy — whether that's an
+            algorithm reading a chest X-ray or a sensor tracking a patient
+            long after they've left the clinic.
+          </p>
+          <p>
+            I trained in <strong>[Degree, e.g. B.S. Biomedical Engineering]</strong>
+            at <strong>[University Name]</strong>, and currently research with
+            <strong>[Lab / Institution Name]</strong>, where I focus on the
+            gap between what clinical AI can do in a paper and what it can
+            safely do in a hospital.
+          </p>
+          <p>
+            Outside the lab, I write about the healthcare technologies
+            actually reaching patients — separating genuine clinical
+            advances from well-funded hype.
+          </p>
+
+          <a href="#contact" class="cv-link">Get my full CV →</a>
+        </div>
+
+        <div class="focus-panel">
+          <p class="panel-label">Research Focus</p>
+          <ul class="focus-list">
+            <li><span class="focus-dot"></span>Clinical &amp; Diagnostic AI</li>
+            <li><span class="focus-dot"></span>Medical Imaging Analysis</li>
+            <li><span class="focus-dot"></span>Wearable Biosensing</li>
+            <li><span class="focus-dot"></span>Clinical NLP &amp; EHR Data</li>
+            <li><span class="focus-dot"></span>Digital Therapeutics</li>
+            <li><span class="focus-dot"></span>Health Data Infrastructure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+      <polyline points="0,20 520,20 540,6 560,34 580,20 1200,20" />
+    </svg>
+  </div>
+
+  <!-- ============ 02 NEW ADVANCEMENTS ============ -->
+  <section class="section section-tinted" id="advancements">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-number">02</span>
+        <div>
+          <p class="eyebrow">Analysis &amp; Commentary</p>
+          <h2>New Advancements in Healthcare Tech</h2>
+        </div>
+      </div>
+      <p class="section-intro">
+        Short-form essays on the breakthroughs, tools, and clinical trials
+        reshaping medicine — written for readers who want the substance
+        without the press-release polish.
+      </p>
+
+      <div class="adv-grid">
+
+        <article class="adv-card">
+          <p class="adv-tag">Medical Imaging</p>
+          <h3>Generative AI Is Learning to Read Scans — Carefully</h3>
+          <p>How diffusion-based models are being validated for radiology,
+            and why "looks right" isn't the same as clinically correct.</p>
+          <a href="#" class="read-link">Read analysis →</a>
+        </article>
+
+        <article class="adv-card">
+          <p class="adv-tag">Wearables</p>
+          <h3>Continuous Biosensing and the End of the Annual Checkup</h3>
+          <p>What always-on vitals monitoring gets right, and where the
+            signal-to-noise problem still outpaces the marketing.</p>
+          <a href="#" class="read-link">Read analysis →</a>
+        </article>
+
+        <article class="adv-card">
+          <p class="adv-tag">Clinical NLP</p>
+          <h3>Extracting Signal From the EHR</h3>
+          <p>Notes on using language models to structure messy clinical
+            text without quietly encoding new forms of bias.</p>
+          <a href="#" class="read-link">Read analysis →</a>
+        </article>
+
+        <article class="adv-card">
+          <p class="adv-tag">Digital Therapeutics</p>
+          <h3>Software as a Prescription: Does It Hold Up?</h3>
+          <p>A look at FDA-cleared digital therapeutics and the evidence
+            behind treating an app like a drug.</p>
+          <a href="#" class="read-link">Read analysis →</a>
+        </article>
+
+        <article class="adv-card">
+          <p class="adv-tag">Infrastructure</p>
+          <h3>The Unglamorous Bottleneck: Health Data Interoperability</h3>
+          <p>Why the hardest problem in healthcare AI isn't the model —
+            it's getting clean, connected data to it at all.</p>
+          <a href="#" class="read-link">Read analysis →</a>
+        </article>
+
+        <article class="adv-card">
+          <p class="adv-tag">Regulation</p>
+          <h3>How the FDA Is Rethinking "Locked" AI Devices</h3>
+          <p>New frameworks for approving models that keep learning after
+            they've already reached the clinic.</p>
+          <a href="#" class="read-link">Read analysis →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+      <polyline points="0,20 520,20 540,6 560,34 580,20 1200,20" />
+    </svg>
+  </div>
+
+  <!-- ============ 03 RESEARCH ============ -->
+  <section class="section" id="research">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-number">03</span>
+        <div>
+          <p class="eyebrow">Selected Work</p>
+          <h2>Research Projects &amp; One-Pagers</h2>
+        </div>
+      </div>
+      <p class="section-intro">
+        Papers, preprints, and condensed one-page summaries from my ongoing
+        research in applied healthcare AI.
+      </p>
+
+      <div class="research-list">
+
+        <article class="research-item">
+          <span class="research-index">01</span>
+          <div class="research-body">
+            <p class="research-tag">Preprint · 2026</p>
+            <h3>Uncertainty-Aware Triage Models for Emergency Radiology</h3>
+            <p>A framework for flagging low-confidence AI reads in
+              time-critical imaging workflows before they reach a clinician.</p>
+          </div>
+          <a href="#" class="btn btn-outline">Read Full Paper</a>
+        </article>
+
+        <article class="research-item">
+          <span class="research-index">02</span>
+          <div class="research-body">
+            <p class="research-tag">One-Pager</p>
+            <h3>Wearable Sensor Drift: A Practical Calibration Protocol</h3>
+            <p>A condensed summary of methods for correcting long-term
+              accuracy drift in consumer-grade biosensors.</p>
+          </div>
+          <a href="#" class="btn btn-outline">Read Full Paper</a>
+        </article>
+
+        <article class="research-item">
+          <span class="research-index">03</span>
+          <div class="research-body">
+            <p class="research-tag">Journal Submission</p>
+            <h3>Bias Auditing for Clinical NLP Pipelines at Scale</h3>
+            <p>An evaluation protocol for detecting demographic bias in
+              language models deployed across electronic health records.</p>
+          </div>
+          <a href="#" class="btn btn-outline">Read Full Paper</a>
+        </article>
+
+        <article class="research-item">
+          <span class="research-index">04</span>
+          <div class="research-body">
+            <p class="research-tag">One-Pager</p>
+            <h3>A Minimal Data Schema for Cross-Hospital Interoperability</h3>
+            <p>A lightweight proposal for reducing integration overhead
+              between disparate EHR systems.</p>
+          </div>
+          <a href="#" class="btn btn-outline">Read Full Paper</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 CV & CONTACT ============ -->
+  <section class="section cta-section" id="contact">
+    <div class="wrap cta-inner">
+      <div>
+        <p class="eyebrow eyebrow-light">04 · Let's Connect</p>
+        <h2 class="cta-heading">CV &amp; Contact</h2>
+        <p class="cta-text">
+          For collaborations, speaking, or a full record of my published
+          and ongoing work, my CV is always up to date.
+        </p>
+        <a href="#" class="btn btn-primary btn-large" download="asrita-doddi-cv.pdf">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-block">
+      <p class="footer-name">Asrita Doddi</p>
+      <p class="footer-role">Healthcare Technology Researcher</p>
+    </div>
+
+    <div class="footer-block footer-contact">
+      <a href="mailto:asrita.doddi@example.com">asrita.doddi@example.com</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+    </div>
+
+    <div class="footer-block footer-meta">
+      <p>Clinical AI · Medical Imaging · Digital Health</p>
+      <p>© <span id="year"></span> Asrita Doddi</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const navToggle = document.getElementById('navToggle');
+  const primaryNav = document.getElementById('primaryNav');
+  navToggle.addEventListener('click', () => {
+    const isOpen = primaryNav.classList.toggle('is-open');
+    navToggle.classList.toggle('is-open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  primaryNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      primaryNav.classList.remove('is-open');
+      navToggle.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>
