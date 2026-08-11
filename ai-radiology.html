@@ -26,82 +26,78 @@
 <main id="main" class="wrap" style="padding: 120px 20px 60px 20px; max-width: 800px; margin: 0 auto;">
   <article>
     <p class="eyebrow" style="color: var(--color-primary, #0070f3); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Medical Imaging</p>
-    <h1 style="font-family: 'Fraunces', serif; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin-bottom: 2rem;">Can AI See What Radiologists Can't?</h1>
+    <h1 style="font-family: 'Fraunces', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1.1; margin-bottom: 2rem;">Can AI See What Radiologists Can't?</h1>
     
-    <div style="font-family: 'Inter', sans-serif; font-size: 1.15rem; line-height: 1.75; color: #333;">
+    <div style="font-family: 'Inter', sans-serif; font-size: 1.15rem; line-height: 1.75; color: #222;">
       
-      <!-- ============ SUB-HEADING ============ -->
-      <h2 style="font-family: 'Fraunces', serif; font-size: 1.75rem; font-weight: 700; margin: 2.5rem 0 1rem 0; color: #111;">Introduction</h2>
-      <p style="margin-bottom: 1.5rem;">
-        In the rapidly evolving landscape of modern medicine, artificial intelligence (AI) has transitioned from a futuristic concept to an active clinical tool. Among its various applications, medical imaging stands out as the most accelerated frontier. Deep learning models can process pixel data at scales and speeds impossible for humans, prompting a critical question: Can AI see what radiologists can't?
+      <p style="margin-bottom: 1.5rem; font-weight: 500; font-size: 1.25rem; color: #000; line-height: 1.6;">
+        Can AI detect patterns in medical images that human radiologists miss—and what actually prevents these systems from running on autopilot?
       </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Introduction</h2>
+      
       <p style="margin-bottom: 1.5rem;">
-        While computational tools excel at identifying microscopic pixel patterns, the integration of AI into radiology exposes a complex tension between mathematical optimization and true clinical utility. This article explores the scientific mechanisms behind imaging AI, examines its current performance, and analyzes the critical blind spots that require human expertise to protect patient safety.
+        Every day, radiologists scroll through thousands of scans, sifting through millions of pixels containing more data than any human eye can process. Now, deep-learning models are beginning to pull signals from those exact same images that even veteran clinicians miss. That raises a fundamental question: Can a machine’s gaze surpass human expertise, and if so, what does that mean for diagnostic medicine?
       </p>
       
-      <!-- ============ SUB-HEADING ============ -->
-      <h2 style="font-family: 'Fraunces', serif; font-size: 1.75rem; font-weight: 700; margin: 2.5rem 0 1rem 0; color: #111;">Scientific Background</h2>
       <p style="margin-bottom: 1.5rem;">
-        Modern medical imaging AI relies primarily on Convolutional Neural Networks (CNNs) and, more recently, Vision Transformers (ViTs). Unlike general computer vision systems that identify everyday objects, medical image analysis requires extreme precision. AI systems are trained to map specific clinical tasks: detection (finding a lesion), segmentation (tracing the boundaries of a tumor), and classification (determining if a growth is benign or malignant).
-      </p>
-      <p style="margin-bottom: 1.5rem;">
-        Through thousands of iterations on annotated training data, these networks learn to identify complex spatial hierarchies. They notice sub-visual textures, gray-scale gradients, and structural geometries that may elude human vision due to fatigue or cognitive bias.
+        The trajectory is clear. Modern deep-learning models can match, and in some specific tasks occasionally exceed clinician performance (1). By picking up on high-dimensional micro-patterns invisible to the eye, these models promise faster, more consistent reads. But raw accuracy isn't the whole picture. Can AI actually handle real-world clinical complexity? What keeps it tied to human oversight? And how do we build workflows where algorithms sharpen clinician judgment rather than just adding noise?
       </p>
 
-      <!-- ============ SUB-HEADING ============ -->
-      <h2 style="font-family: 'Fraunces', serif; font-size: 1.75rem; font-weight: 700; margin: 2.5rem 0 1rem 0; color: #111;">Current Research</h2>
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Scientific Background</h2>
+      
       <p style="margin-bottom: 1.5rem;">
-        Recent clinical research highlights both the extraordinary capability and the structural vulnerability of medical imaging models.
+        At its core, diagnostic AI maps hidden image patterns to disease states. In a major systematic review, Aggarwal et al. documented impressive diagnostic performance across multiple specialties, though results swung wildly depending on the specific task and dataset (1). It was a clear proof-of-concept for deep learning, but it also exposed a recurring issue in the field: methodological shortcuts in early studies often inflate real-world expectations.
+      </p>
+      
+      <p style="margin-bottom: 1.5rem;">
+        However, beyond spotting tumors, deep-learning models can extract demographic data that humans simply cannot see. Gichoya et al. showed that algorithms could accurately predict a patient's self-reported race from chest X-rays and mammograms—even when images were heavily cropped, degraded, or otherwise altered (2).
+      </p>
+      
+      <p style="margin-bottom: 1.5rem;">
+        Extending this to cardiac imaging, Duffy et al. demonstrated that AI could easily infer age and sex from echocardiograms. Interestingly, race wasn't reliably predicted in their model, revealing that apparent demographic signals can be strongly influenced by confounding variables such as age and sex (3). Scans clearly contain massive amounts of latent data, but we still don't fully understand the biological or mathematical rules the models use to find it.
       </p>
 
-      <!-- ============ SUB-SUB-HEADING ============ -->
-      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 2rem 0 1rem 0; color: #222;">Comparative Performance in Clinical Tasks</h3>
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Current Research</h2>
+      
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 600; margin: 1.5rem 0 0.75rem 0; color: #000;">Comparative Performance in Clinical Tasks</h3>
       <p style="margin-bottom: 1.5rem;">
-        Large-scale meta-analyses show that deep learning algorithms achieve diagnostic accuracy equivalent to human radiologists in specific tasks, such as detecting pulmonary nodules on chest X-rays or identifying stroke markers on CT scans. In controlled settings, algorithms operate with high sensitivity, drastically reducing the time required to sort through hundreds of routine slices.
+        When tested side by side on tight, well-defined tasks, AI excels. In a multi-reader study on brain tumors during stereotactic radiosurgery, adding AI assistance boosted reader sensitivity from 82.6% to 91.3% while tightening inter-reader agreement (Dice scores jumped from 0.86 to 0.90) (4). A meta-analysis on brain metastasis detection backed this up, showing pooled detectability of 90.1% for deep-learning approaches (5). In these controlled tests, AI didn't just mimic human eyes; it caught things humans missed.
       </p>
 
-      <!-- ============ SUB-SUB-HEADING ============ -->
-      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 2rem 0 1rem 0; color: #222;">The Blind Spot: Limited Clinical Context</h3>
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 600; margin: 1.5rem 0 0.75rem 0; color: #000;">The Blind Spot: Limited Clinical Context</h3>
       <p style="margin-bottom: 1.5rem;">
-        A major limitation of current tools is their narrow focus. A radiologist reading a chest scan evaluates the lungs, heart, bones, and surrounding tissues simultaneously, integrating the patient's electronic health records (EHR) and clinical history. In contrast, an algorithm optimized solely to detect lung nodules remains entirely blind to an adjacent rib fracture or an enlarged heart, failing to grasp the broader clinical context.
+        Pixel accuracy doesn't equal clinical wisdom. Standard vision models spot statistical patterns; they don't know the patient. Unless explicitly programmed to do so, an algorithm reading a chest X-ray has no idea what the patient's lab results look like, what medications they take, or why they came to the ER in the first place.
+      </p>
+      <p style="margin-bottom: 1.5rem;">
+        Cai et al. observed that when doctors first use an AI assistant, they intuitively look for its underlying logic, limitations, and design limits, much like getting a second opinion from a human colleague (6). Without a clear mental model of what the AI is good at (and where it fails), clinicians may either over trust its recommendations or struggle to use its output appropriately. Therefore, human oversight is not merely a regulatory requirement; it is an important part of safe human-AI collaboration.
       </p>
 
-      <!-- ============ SUB-SUB-HEADING ============ -->
-      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 2rem 0 1rem 0; color: #222;">The Black-Box Problem</h3>
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 600; margin: 1.5rem 0 0.75rem 0; color: #000;">The Black-Box Problem</h3>
       <p style="margin-bottom: 1.5rem;">
-        Deep neural networks calculate probabilities through millions of interconnected mathematical weights, making it incredibly difficult to trace exactly *why* a model reached a specific conclusion. This lack of interpretability poses a severe challenge in medicine. If an algorithm flags a scan as malignant without a clear explanation, clinicians cannot verify the logic, which hinders trust and patient communication.
+        Compounding the context issue is opacity. Neural networks don't leave trail markers showing how they reached a verdict. While computer scientists have published extensively on technical explainability, reviews by Chen et al. and Abbas et al. point out a glaring disconnect: very few of these technical tools actually help a doctor sitting at a workstation (7,8). Frameworks like FUTURE-AI outline essential guidelines (Fairness, Universality, Traceability, Usability, Robustness, and Explainability) but a huge gap remains, separating tidy lab tests from chaotic emergency rooms.
       </p>
 
-      <!-- ============ SUB-SUB-HEADING ============ -->
-      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 2rem 0 1rem 0; color: #222;">Vulnerability to Adversarial Attacks</h3>
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 600; margin: 1.5rem 0 0.75rem 0; color: #000;">Vulnerability to Adversarial Attacks</h3>
       <p style="margin-bottom: 1.5rem;">
-        Research demonstrates that medical AI models are highly sensitive to microscopic changes in pixel data. Engineers can introduce "adversarial noise"—subtle pixel alterations invisible to human eyes—that cause a model to misclassify a completely normal scan into a terminal diagnosis with absolute mathematical certainty. This vulnerability highlights that AI does not "understand" anatomy; it merely processes statistical patterns.
+        AI also suffers from vulnerabilities that make zero sense to the human brain. Through "adversarial attacks," tiny, imperceptible shifts in pixel noise can trick a model into misdiagnosing a completely normal scan (9). Worse, advanced image-translation tools like CycleGAN can actually hallucinate or erase real clinical features when converting images between formats (10). Without strict oversight and input validation, these blind spots are serious risks.
       </p>
 
-      <!-- ============ SUB-SUB-HEADING ============ -->
-      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 2rem 0 1rem 0; color: #222;">Demographic Bias and Hidden Data</h3>
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 600; margin: 1.5rem 0 0.75rem 0; color: #000;">Demographic Bias and Hidden Data</h3>
       <p style="margin-bottom: 1.5rem;">
-        Surprisingly, models can accurately predict a patient's self-reported race, age, and biological sex directly from raw, unannotated chest X-rays—information that human radiologists cannot discern from the image alone. While computationally fascinating, this capability poses an immense risk. If a dataset lacks diversity, the model can inadvertently learn to associate demographic traits with disease probabilities, quietly embedding systemic healthcare biases into its diagnostic outputs.
+        If an algorithm learns demographics, it also learns human bias. When training data skews heavily toward one group, performance drops for everyone else. Larrazabal et al. proved this directly: gender imbalances in imaging datasets produced models that performed noticeably worse on underrepresented sexes (11).
+      </p>
+      <p style="margin-bottom: 1.5rem;">
+        This is made worse by a total lack of industry transparency. A scoping review of 692 FDA-approved AI/ML-enabled medical devices revealed that only 3.6% reported participant race/ethnicity data, and over 80% left out patient age entirely (12). Without that data, there is no way to know if a commercial tool works equally well across diverse patient populations.
       </p>
 
-      <!-- ============ SUB-HEADING ============ -->
-      <h2 style="font-family: 'Fraunces', serif; font-size: 1.75rem; font-weight: 700; margin: 2.5rem 0 1rem 0; color: #111;">Analysis</h2>
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Analysis: What It Means</h2>
+      
       <p style="margin-bottom: 1.5rem;">
-        The data demonstrates that while AI can process sub-visual data patterns, it operates without clinical comprehension. The true danger of medical imaging AI is not that it will fail completely, but that it will fail invisibly—producing highly confident, mathematically sound outputs based on skewed, biased, or manipulated data.
+        The data doesn't support replacing radiologists. Instead, it frames AI as a cognitive co-pilot, a high-powered filter that extends human vision. In fact, field studies show that institutional culture, workflow design, and physician trust can strongly influence an algorithm's successful adoption (13).
+      </p>
+      
+      <p style="margin-bottom: 1.5rem;">
+        In practice, AI works best as triage: flagging urgent head CTs, triaging chest scans, or highlighting subtle micro-calcifications while the radiologist handles the broader diagnostic picture. Well-designed support tools lighten the cognitive load; they don't replace human responsibility (14).
       </p>
 
-      <!-- ============ SUB-SUB-HEADING ============ -->
-      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 2rem 0 1rem 0; color: #222;">Ethical and Regulatory Hurdles</h3>
-      <p style="margin-bottom: 1.5rem;">
-        The current regulatory landscape is struggling to keep pace with these technologies. The FDA has cleared hundreds of AI-enabled medical devices, but the vast majority are approved using historical data trails without prospective, multi-center clinical trials. Furthermore, moving an algorithm from a clean research laboratory to a messy hospital environment frequently causes a drop in performance due to differences in scanner brands and imaging protocols.
-      </p>
-
-      <!-- ============ SUB-HEADING ============ -->
-      <h2 style="font-family: 'Fraunces', serif; font-size: 1.75rem; font-weight: 700; margin: 2.5rem 0 1rem 0; color: #111;">Future Directions</h2>
-      <p style="margin-bottom: 1.5rem;">
-        To unlock the true potential of machine intelligence safely, the scientific community is shifting toward "Generalist Medical AI" (GMAI) and multimodal biomedical systems. Future models will combine computer vision with large language models, allowing the AI to read an X-ray while simultaneously reviewing the patient's lab results, prescription history, and prior clinical notes. This holistic approach helps bridge the current contextual gap.
-      </p>
-
-      <!-- ============ SUB-HEADING ============ -->
-      <h2 style="font-family: 'Fraunces', serif; font-size: 1.75rem; font-weight: 700; margin: 2.5rem 0 1rem 0; color: #111;">Conclusion</h2>
-      <p style="margin-bottom: 1.5rem;">
