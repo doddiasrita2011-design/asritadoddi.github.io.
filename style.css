@@ -419,6 +419,17 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   margin-bottom: 8px;
 }
 .research-body p { font-size: 15px; margin-bottom: 0; max-width: 560px; }
+/* ---------- CTA / Contact ---------- */
+.cta-section {
+  background: var(--ink);
+  padding: 110px 0;
+}
+.cta-inner { max-width: 640px; }
+.cta-heading {
+  color: var(--white);
+  font-size: clamp(30px, 4.4vw, 42px);
+  margin-bottom: 18px;
+}
 
 /* ---------- CTA text tweak ---------- */
 .cta-text {
@@ -426,6 +437,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   font-size: 17px;
   margin-bottom: 32px;
 }
+
 
 /* ---------- Contact form ---------- */
 .contact-form {
