@@ -205,8 +205,33 @@
         <p class="eyebrow eyebrow-light">04 · Let's Connect</p>
         <h2 class="cta-heading">Contact</h2>
         <p class="cta-text">
-         Email: <a href="mailto:doddiasrita2011@gmail.com">doddiasrita2011@gmail.com</a>
+          For collaborations, questions, or feedback, send me a message below —
+          I'll get back to you as soon as I can.
         </p>
+
+        <form action="https://formspree.io/f/xqpzbggg" method="POST" class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <!-- redirect after successful submission back to the contact section -->
+          <input type="hidden" name="_next" value="index.html#contact">
+          <!-- honeypot field to reduce spam, leave this hidden -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+        </form>
       </div>
     </div>
   </section>
@@ -217,9 +242,6 @@
     <div class="footer-block">
       <p class="footer-name">Asrita Doddi</p>
       <p class="footer-role">Student Researcher</p>
-    </div>
-    <div class="footer-block footer-contact">
-      <a href="mailto:doddiasrita2011@gmail.com">doddiasrita2011@gmail.com</a>
     </div>
     <div class="footer-block footer-meta">
       <p>Life Sciences · Medicine · Biomedical Technology</p>
