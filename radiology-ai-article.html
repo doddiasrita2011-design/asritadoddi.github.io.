@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Can AI See What Radiologists Can't? — Asrita Doddi</title>
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  html { scroll-behavior: smooth; }
+  a.citation-link {
+    color: var(--color-primary, #0070f3);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a.citation-link:hover {
+    text-decoration: underline;
+  }
+  li.ref-item:target,
+  li.ref-item.highlight {
+    background: #fff6d6;
+    border-radius: 4px;
+  }
+</style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html#top">
+      <span class="logo-mark">AD</span>
+      <span class="logo-name">Asrita Doddi</span>
+    </a>
+    <nav class="primary-nav">
+      <a href="index.html#advancements">&larr; Back to Advances</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap" style="padding: 120px 20px 60px 20px; max-width: 800px; margin: 0 auto;">
+  <article>
+    <p class="eyebrow" style="color: var(--color-primary, #0070f3); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Medical Imaging</p>
+    <h1 style="font-family: 'Fraunces', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1.1; margin-bottom: 2rem;">Can AI See What Radiologists Can't?</h1>
+
+    <div style="font-family: 'Inter', sans-serif; font-size: 1.15rem; line-height: 1.75; color: #222;">
+
+      <p style="margin-bottom: 1.5rem; font-weight: 500; font-size: 1.25rem; color: #000; line-height: 1.6;">
+        Can AI detect patterns in medical images that human radiologists miss—and what actually prevents these systems from running on autopilot?
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Introduction</h2>
+
+      <p style="margin-bottom: 1.5rem;">
+        The boundaries of human vision are fascinating, especially when we are forced to acknowledge things we cannot see. Every day, radiologists scroll through thousands of scans, sifting through millions of pixels containing more data than any human eye can process. Deep-learning models are now beginning to pull signals from those exact same images that even veteran clinicians miss. Radiology stands out as a translation problem; it is the one medical discipline where a patient's entire reality must be decoded from a pattern of gray tones on a screen. That raises the question: If automated tools diagnose disease better than specialists, how does diagnostic medicine change?
+      </p>
+
+      <p style="margin-bottom: 1.5rem;">
+        The trajectory is clear. Modern deep-learning models can match, and in some specific tasks occasionally exceed clinician performance (<a href="#ref1" class="citation-link">1</a>). By picking up on high-dimensional micro-patterns invisible to the eye, these models promise faster, more consistent reads. But raw accuracy isn't the whole picture. To understand what these models can actually do, we have to look past high scores and see what hidden data they are truly pulling from the scans.
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Scientific Background</h2>
+
+      <p style="margin-bottom: 1.5rem;">
+        At its core, diagnostic AI maps hidden image patterns to disease states. In a major systematic review, Aggarwal et al. documented impressive diagnostic performance across multiple specialties, though results swung wildly depending on the specific task and dataset (<a href="#ref1" class="citation-link">1</a>). It was a clear proof-of-concept for deep learning, but it also exposed a recurring issue in the field: methodological shortcuts in early studies often inflate real-world expectations.
+      </p>
+
+      <p style="margin-bottom: 1.5rem;">
+        However, beyond spotting tumors, deep-learning models can extract demographic data that humans simply cannot see. Reading the landmark study by Gichoya et al. left me fascinated but creeped out. This study showed that algorithms could accurately predict a patient's self-reported race from chest X-rays and mammograms—even when images were heavily cropped, degraded, or otherwise altered (<a href="#ref2" class="citation-link">2</a>). This shows a weird gap in knowledge: AI can instantly spot race on a scan using math that humans cannot see.
+      </p>
+
+      <p style="margin-bottom: 1.5rem;">
+        Extending this to cardiac imaging, Duffy et al. demonstrated that AI could easily infer age and sex from echocardiograms. Interestingly, race wasn't reliably predicted in their model, revealing that apparent demographic signals can be strongly influenced by confounding variables such as age and sex (<a href="#ref3" class="citation-link">3</a>). Scans clearly contain massive amounts of latent data, but we still don't fully understand the biological or mathematical rules the models use to find it.
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Current Research</h2>
+
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 1.5rem 0 0.75rem 0; color: #000;">Comparative Performance in Clinical Tasks</h3>
+      <p style="margin-bottom: 1.5rem;">
+        When tested side by side on tight, well-defined tasks, AI excels. In a multi-reader study on brain tumors during stereotactic radiosurgery, adding AI assistance boosted reader sensitivity from 82.6% to 91.3% while tightening inter-reader agreement (Dice scores jumped from 0.86 to 0.90) (<a href="#ref4" class="citation-link">4</a>). A meta-analysis on brain metastasis detection backed this up, showing pooled detectability of 90.1% for deep-learning approaches (<a href="#ref5" class="citation-link">5</a>). In these controlled tests, AI didn't just mimic human eyes; it caught things humans missed.
+      </p>
+
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 1.5rem 0 0.75rem 0; color: #000;">Limited Clinical Context</h3>
+      <p style="margin-bottom: 1.5rem;">
+        Pixel accuracy doesn't equal clinical wisdom. Standard vision models spot statistical patterns; they don't know the patient. Unless explicitly programmed to do so, an algorithm reading a chest X-ray has no idea what the patient's lab results look like, what medications they take, or why they came to the ER in the first place.
+      </p>
+      <p style="margin-bottom: 1.5rem;">
+        Cai et al. observed that when doctors first use an AI assistant, they intuitively look for its underlying logic, limitations, and design limits, much like getting a second opinion from a human colleague (<a href="#ref6" class="citation-link">6</a>). Without a clear mental model of what the AI is good at (and where it fails), clinicians may either over trust its recommendations or struggle to use its output appropriately. Human oversight is a core requirement for safe AI collaboration and legal rules.
+      </p>
+      <p style="margin-bottom: 1.5rem;">
+        Although computer scientists write a lot about making AI understandable, studies show these tools rarely help a doctor sitting at a workstation (<a href="#ref7" class="citation-link">7</a>,<a href="#ref8" class="citation-link">8</a>). Even with official guidelines in place, a massive gap still separates clean laboratory tests from chaotic emergency rooms.
+      </p>
+
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 1.5rem 0 0.75rem 0; color: #000;">Vulnerability to Adversarial Attacks</h3>
+      <p style="margin-bottom: 1.5rem;">
+        AI also suffers from vulnerabilities that make zero sense to the human brain. Through "adversarial attacks," tiny, imperceptible shifts in pixel noise can trick a model into misdiagnosing a completely normal scan (<a href="#ref9" class="citation-link">9</a>). Worse, advanced image-translation tools like CycleGAN can actually hallucinate or erase real clinical features when converting images between formats (<a href="#ref10" class="citation-link">10</a>). Without strict oversight and input validation, these blind spots are serious risks.
+      </p>
+
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 1.5rem 0 0.75rem 0; color: #000;">Demographic Bias and Hidden Data</h3>
+      <p style="margin-bottom: 1.5rem;">
+        If an algorithm learns demographics, it also learns human bias. When training data skews heavily toward one group, performance drops for everyone else. Larrazabal et al. proved this directly: gender imbalances in imaging datasets produced models that performed noticeably worse on underrepresented sexes (<a href="#ref11" class="citation-link">11</a>).
+      </p>
+      <p style="margin-bottom: 1.5rem;">
+        This is made worse by a total lack of industry transparency. A scoping review of 692 FDA-approved AI/ML-enabled medical devices revealed that only 3.6% reported participant race/ethnicity data, and over 80% left out patient age entirely (<a href="#ref12" class="citation-link">12</a>). Without that data, there is no way to know if a commercial tool works equally well across diverse patient populations.
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Analysis: What It Means</h2>
+
+      <p style="margin-bottom: 1.5rem;">
+        The data doesn't support replacing radiologists. Instead, it frames AI as a cognitive co-pilot, a high-powered filter that extends human vision. In fact, field studies show that institutional culture, workflow design, and physician trust can strongly influence an algorithm's successful adoption (<a href="#ref13" class="citation-link">13</a>).
+      </p>
+
+      <p style="margin-bottom: 1.5rem;">
+        In practice, AI works best as triage: flagging urgent head CTs, triaging chest scans, or highlighting subtle micro-calcifications while the radiologist handles the broader diagnostic picture. Well-designed support tools lighten the cognitive load; they don't replace human responsibility (<a href="#ref14" class="citation-link">14</a>).
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Ethical and Regulatory Hurdles</h2>
+
+      <p style="margin-bottom: 1.5rem;">
+        Regulators are struggling to keep up. Most of the FDA's cleared AI algorithms entered the market via the 510(k) pathway by claiming "substantial equivalence" to older technology (<a href="#ref15" class="citation-link">15</a>). But adaptive, generative algorithms do not act like traditional medical devices. As Meskó and Topol argue, medical-grade generative AI requires regulatory frameworks that address its unique risks and capabilities (<a href="#ref16" class="citation-link">16</a>). Moving forward, AI literacy will need to become a core competency in medical residency, right alongside anatomy and pathology.
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.75rem; margin: 2.5rem 0 1rem 0;">Future Directions</h2>
+
+      <p style="margin-bottom: 1.5rem;">
+        The next phase of clinical AI is moving toward broader adaptability.
+      </p>
+
+      <p style="margin-bottom: 1.5rem;">
+        Foundation models (<a href="#ref17" class="citation-link">17</a>), multimodal AI (<a href="#ref19" class="citation-link">19</a>), federated learning (<a href="#ref20" class="citation-link">20</a>), and reporting standards like FUTURE-AI, CONSORT-AI, and SPIRIT-AI (<a href="#ref18" class="citation-link">18</a>,<a href="#ref21" class="citation-link">21</a>,<a href="#ref22" class="citation-link">22</a>) are all pushing toward the same goal: proving these tools actually work in the real world, not just on clean test data.
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.75rem; margin: 2.5rem 0 1rem 0;">Conclusion</h2>
+
+      <p style="margin-bottom: 1.5rem;">
+        Ultimately, AI can match or exceed human eyes on tight, specific detection tasks, but it lacks the clinical context, adaptability, and reasoning required to make decisions on its own. Because algorithms can be fragile, and difficult to understand, human oversight is crucial.
+      </p>
+
+      <p style="margin-bottom: 2.5rem;">
+        The future of radiology is not a race between humans and machines. It's a partnership. AI provides the computational muscle to catch subtle patterns; radiologists bring the contextual judgment to treat the actual patient.
+      </p>
+
+      <hr style="border: 0; border-top: 1px solid #eee; margin: 2rem 0;">
+
+      <h3 style="font-family: 'Fraunces', serif; font-size: 1.4rem; margin-bottom: 1.5rem; color: #555;">References</h3>
+
+      <ol style="font-size: 1rem; line-height: 1.6; color: #666; padding-left: 1.2rem; margin-bottom: 2rem;">
+        <li id="ref1" class="ref-item" style="margin-bottom: 0.75rem;">Aggarwal R, Sundaraja V, Martin G, et al. Diagnostic accuracy of deep learning in medical imaging: a systematic review and meta-analysis. npj Digital Medicine. 2021. doi:10.1038/s41746-021-00438-z</li>
+        <li id="ref2" class="ref-item" style="margin-bottom: 0.75rem;">Gichoya JW, Banerjee I, Bhimireddy AR, et al. AI recognition of patient race in medical imaging: a modelling study. Lancet Digital Health. 2022. doi:10.1016/S2589-7500(22)00063-2</li>
+        <li id="ref3" class="ref-item" style="margin-bottom: 0.75rem;">Duffy G, Clarke SL, Christensen M, et al. Confounders mediate AI prediction of demographics in medical imaging. npj Digital Medicine. 2022. doi:10.1038/s41746-022-00720-8</li>
+        <li id="ref4" class="ref-item" style="margin-bottom: 0.75rem;">Lu SL, Xiao F, Cheng JC-H, et al. Randomized multi-reader evaluation of automated detection and segmentation of brain tumors in stereotactic radiosurgery with deep neural networks. Neuro-Oncology. 2021;23(9):1560-1568. doi:10.1093/neuonc/noab071</li>
+        <li id="ref5" class="ref-item" style="margin-bottom: 0.75rem;">Cho SJ, Sunwoo L, Baik SH, et al. Brain metastasis detection using machine learning: a systematic review and meta-analysis. Neuro-Oncology. 2021;23(2):214-225. doi:10.1093/neuonc/noaa232</li>
+        <li id="ref6" class="ref-item" style="margin-bottom: 0.75rem;">Cai CJ, Winter S, Steiner D, Wilcox L, Terry M. "Hello AI": uncovering the onboarding needs of medical practitioners for human-AI collaborative decision-making. Proceedings of the ACM on Human-Computer Interaction. 2019;3(CSCW):104. doi:10.1145/3359206</li>
+        <li id="ref7" class="ref-item" style="margin-bottom: 0.75rem;">Chen H, Gómez C, Huang CM, Unberath M. Explainable medical imaging AI needs human-centered design: guidelines and evidence from a systematic review. npj Digital Medicine. 2022. doi:10.1038/s41746-022-00699-2</li>
+        <li id="ref8" class="ref-item" style="margin-bottom: 0.75rem;">Abbas Q, Jeong WM, Lee SW. Explainable AI in clinical decision support systems: a meta-analysis of methods and uses. Healthcare. 2025. doi:10.3390/healthcare13172154</li>
+        <li id="ref9" class="ref-item" style="margin-bottom: 0.75rem;">Finlayson SG, Bowers JD, Ito J, Zittrain JL, Beam AL, Kohane IS. Adversarial attacks on medical machine learning. Science. 2019;363(6433):1287-1289. doi:10.1126/science.aaw4399</li>
+        <li id="ref10" class="ref-item" style="margin-bottom: 0.75rem;">Cohen JP, Luck M, Honari S. Distribution of matching losses can hallucinate features in medical image translation. In: Medical Image Computing and Computer Assisted Intervention (MICCAI 2018). Lecture Notes in Computer Science. Springer 2018. doi:10.1007/978-3-030-00928-1_60</li>
+        <li id="ref11" class="ref-item" style="margin-bottom: 0.75rem;">Larrazabal AJ, Nieto N, Peterson V, Milone DH, Ferrante E. Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis. PNAS. 2020;117(23):12592-12594. doi:10.1073/pnas.1919012117</li>
+        <li id="ref12" class="ref-item" style="margin-bottom: 0.75rem;">Muralidharan V, Adewale BA, Huang CJ, et al. A scoping review of reporting gaps in FDA-approved AI medical devices. npj Digital Medicine. 2024. doi:10.1038/s41746-024-01270-x</li>
+        <li id="ref13" class="ref-item" style="margin-bottom: 0.75rem;">Strohm LGD, Hehakaya C, Ranschaert ER, Boon WPC, Moors EHM. Implementation of artificial intelligence (AI) applications in radiology: hindering and facilitating factors. European Radiology. 2020. doi:10.1007/s00330-020-06946-y</li>
+        <li id="ref14" class="ref-item" style="margin-bottom: 0.75rem;">Elhaddad M, Hamam S. AI-driven clinical decision support systems: an ongoing pursuit of potential. Cureus. 2024;16(4):e57728. doi:10.7759/cureus.57728</li>
+        <li id="ref15" class="ref-item" style="margin-bottom: 0.75rem;">Joshi G, Jain A, Araveeti SR, Adhikari S, Garg H, Bhandari M. FDA-approved artificial intelligence and machine learning (AI/ML)-enabled medical devices: an updated landscape. Electronics. 2024;13(3):498. doi:10.3390/electronics13030498</li>
+        <li id="ref16" class="ref-item" style="margin-bottom: 0.75rem;">Meskó B, Topol EJ. The imperative for regulatory oversight of large language models (or generative AI) in healthcare. npj Digital Medicine. 2023. doi:10.1038/s41746-023-00873-0</li>
+        <li id="ref17" class="ref-item" style="margin-bottom: 0.75rem;">Moor M, Banerjee O, Abad ZSH, et al. Foundation models for generalist medical artificial intelligence. Nature. 2023;616:259-265. doi:10.1038/s41586-023-05881-4</li>
+        <li id="ref18" class="ref-item" style="margin-bottom: 0.75rem;">Lekadir K, Frangi AF, Porras AR, et al. FUTURE-AI: international consensus guideline for trustworthy and deployable artificial intelligence in healthcare. BMJ. 2025;388:e081554. doi:10.1136/bmj-2024-081554</li>
+        <li id="ref19" class="ref-item" style="margin-bottom: 0.75rem;">Acosta JN, Falcone GJ, Rajpurkar P, Topol EJ. Multimodal biomedical AI. Nature Medicine. 2022. doi:10.1038/s41591-022-01981-2</li>
+        <li id="ref20" class="ref-item" style="margin-bottom: 0.75rem;">Kaissis GA, Makowski MR, Rückert D, Braren RF. Secure, privacy-preserving, and federated machine learning in medical imaging. Nature Machine Intelligence. 2020. doi:10.1038/s42256-020-0186-1</li>
+        <li id="ref21" class="ref-item" style="margin-bottom: 0.75rem;">- Liu X, Cruz Rivera S, Moher D, Calvert MJ, Denniston AK. Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension. Nature Medicine. 2020. doi:10.1038/s41591-020-1034-x</li>
+        <li id="ref22" class="ref-item" style="margin-bottom: 0.75rem;">1. Cruz Rivera S, Liu X, Chan AW, Denniston AK, Calvert MJ. Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension. Nature Medicine. 2020. doi:10.1038/s41591-020-1037-7</li>
+      </ol>
+
+    </div>
+  </article>
+</main>
+</body>
+</html>
