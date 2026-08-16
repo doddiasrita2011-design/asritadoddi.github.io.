@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cellular Senescence — Asrita Doddi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  html { scroll-behavior: smooth; }
+
+  a.citation-link {
+    color: var(--color-primary, #0070f3);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a.citation-link:hover {
+    text-decoration: underline;
+  }
+
+  li.ref-item:target,
+  li.ref-item.highlight {
+    background: #fff6d6;
+    border-radius: 4px;
+  }
+
+  .glossary-box {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    background: #fafafa;
+    margin: 28px 0 36px 0;
+    overflow: hidden;
+  }
+  .glossary-box summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 16px 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .glossary-box summary::-webkit-details-marker {
+    display: none;
+  }
+  .glossary-box summary::after {
+    content: "+";
+    font-size: 20px;
+    font-weight: 500;
+    color: #888;
+    transition: transform 0.2s ease;
+  }
+  .glossary-box[open] summary::after {
+    content: "−";
+  }
+  .glossary-box .glossary-content {
+    padding: 4px 20px 20px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16.5px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+  }
+  .glossary-content p {
+    margin-bottom: 14px;
+  }
+  .glossary-content p:last-child {
+    margin-bottom: 0;
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html#top">
+      <span class="logo-mark">AD</span>
+      <span class="logo-name">Asrita Doddi</span>
+    </a>
+    <nav class="primary-nav">
+      <a href="index.html#research">&larr; Back to Research</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap" style="padding: 120px 32px 80px; max-width: 760px; margin: 0 auto;">
+  <article>
+    <p class="eyebrow">Aging &amp; Cellular Biology</p>
+    <h1 style="font-family: 'Fraunces', serif; font-size: clamp(32px, 5vw, 48px); line-height: 1.1; margin-bottom: 0.75rem;">
+      Cellular Senescence
+    </h1>
+    <p style="font-family: 'Inter', sans-serif; font-size: 0.95rem; color: #888; margin-bottom: 28px;">August 15, 2026</p>
+    <p style="font-size: 18px; font-weight: 500; color: var(--ink); margin-bottom: 32px;">
+      How cells that stop dividing can influence aging, tissue function, and disease,
+      and why researchers are exploring ways to target them.
+    </p>
+
+    <div style="font-size: 16.5px; line-height: 1.75; color: var(--ink-soft);">
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Introduction</h2>
+
+      <p style="margin-bottom: 1.5rem;">
+        Science is full of mysteries, especially when you look at how the human body works. Cell biology shows us that growing old isn't just a wearing down over time, but an active buildup of cells that refuse to clear away. The way these damaged cells can completely stop dividing but stay active enough to cause major problems makes us rethink how we understand aging and disease. The idea that a cell refuses to either function or disappear is hard to wrap your head around. Cellular senescence describes cells that permanently stop dividing but stay alive, lingering in tissue rather than dying off the way damaged cells normally do (<a href="#ref1" class="citation-link">1</a>).
+      </p>
+
+      <details class="glossary-box">
+        <summary>Key Terms — click to expand</summary>
+        <div class="glossary-content">
+          <p><strong>Shortened telomeres</strong> — Telomeres are like the plastic tips on shoelaces, but for your chromosomes. Every time a cell divides, its telomeres get a little shorter. Once they get too short, the cell can't safely divide anymore — this is one of the main triggers for senescence.</p>
+          <p><strong>Oxidative stress</strong> — Damage caused by unstable molecules (called free radicals) building up faster than the body can clean them up. Think of it like rust slowly forming on metal — a natural byproduct of normal cell activity that becomes harmful in excess.</p>
+          <p><strong>Phenotype</strong> — The observable traits or characteristics a cell (or organism) displays — basically, what it looks like or how it behaves, as opposed to its underlying genetic code.</p>
+          <p><strong>p16 and p21</strong> — Two proteins that act like "brakes" inside a cell, stopping it from dividing when something's wrong. Scientists often look for these proteins as a sign that a cell has become senescent.</p>
+          <p><strong>SA-β-galactosidase</strong> — An enzyme that becomes unusually active in senescent cells. It's one of the most common lab tests scientists use to check "is this cell senescent or not?"</p>
+          <p><strong>Chromatin</strong> — The tightly packed combination of DNA and proteins inside a cell's nucleus. Its structure changes noticeably when a cell becomes senescent, which is part of why senescent cells behave so differently.</p>
+          <p><strong>Senolytics</strong> — Drugs designed to specifically find and kill senescent cells, clearing them out of the body.</p>
+          <p><strong>Senomorphics</strong> — Drugs that don't kill senescent cells, but instead calm down the harmful signals (like the SASP) they send out — letting the cells stick around but behave less destructively.</p>
+        </div>
+      </details>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Scientific Background</h2>
+
+      <p style="margin-bottom: 1.5rem;">
+        Senescence is triggered when a cell detects damage; DNA breaks, shortened telomeres, and oxidative stress permanently exits the cell cycle rather than risk becoming cancerous (<a href="#ref3" class="citation-link">3</a>,<a href="#ref5" class="citation-link">5</a>). This is a defense mechanism at its core; a damaged cell is either repaired, destroyed or locked in place so that it can't replicate its damage further (<a href="#ref1" class="citation-link">1</a>). But senescent cells don't stay silent. They develop what's called a senescence-associated secretory phenotype (SASP)—a mixture of inflammatory signals, growth factors and enzymes that they pump into surrounding tissue (<a href="#ref5" class="citation-link">5</a>,<a href="#ref6" class="citation-link">6</a>). In small amounts, this is useful. In large, accumulated amounts over decades, however, it's very harmful.
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Current Research</h2>
+
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 1.5rem 0 0.75rem 0; color: #000;">Senescence as a Double-Edged Sword?</h3>
+      <p style="margin-bottom: 1.5rem;">
+        The paradox at the heart of this field is that senescence is protective early on and destructive later. In young tissue, senescent cells act as tumor-suppressing checkpoints, stopping damaged cells from multiplying, and they help wounds heal by signaling immune cells to clear debris (<a href="#ref2" class="citation-link">2</a>). But as senescent cells accumulate with age, that same SASP output shifts from helpful to corrosive—chronic low-grade inflammation, tissue stiffening, and a microenvironment that can encourage nearby cancer growth instead of preventing it (<a href="#ref1" class="citation-link">1</a>,<a href="#ref2" class="citation-link">2</a>,<a href="#ref4" class="citation-link">4</a>). The same mechanism that protects a 20-year old's tissue can easily undermine a 70-year old's tissue.
+      </p>
+
+      <h3 style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 1.5rem 0 0.75rem 0; color: #000;">The Problem of Measuring a Moving Target</h3>
+      <p style="margin-bottom: 1.5rem;">
+        Here's where the science gets messy; there's no single marker that reliably identifies a senescent cell. Researchers rely on a combination of signals, markers like p16 and p21, SA-β-galactosidase staining, altered chromatin structure, but none of these are universal or exclusive to senescence (<a href="#ref7" class="citation-link">7</a>). This uncertainty has real consequences. A 2024 field-wide consensus paper had to lay out minimum reporting standards just so different labs' senescence studies could be meaningfully compared to each other (<a href="#ref8" class="citation-link">8</a>). That's not a minor technical footnote; it means a lot of earlier senescence studies may be describing overlapping, but not identical cell populations.
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.8rem; margin: 2.5rem 0 1rem 0; color: #000;">Analysis: What It Means</h2>
+
+      <p style="margin-bottom: 1.5rem;">
+        If senescent cells are central to aging, tissue repair, and cancer risk, the obvious next question is whether removing them helps. Emerging longevity research increasingly treats senescent cell burden as a measurable, targetable driver of age-related disease rather than an unavoidable side effect of getting older (<a href="#ref6" class="citation-link">6</a>). That reframing matters; it shifts senescence from "an inevitable consequence of time" to "a biological process with potential intervention points"—a big deal for how future medicine might approach aging related conditions rather than treating each one in isolation.
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.75rem; margin: 2.5rem 0 1rem 0;">Future Directions</h2>
+
+      <p style="margin-bottom: 1.5rem;">
+        The field is moving toward senolytics; drugs designed to selectively clear senescent cells, alongside senomorphics that suppress the SASP without killing the cell outright (<a href="#ref4" class="citation-link">4</a>). A 2019 consensus paper pushed the field toward standardized senescence classification and clearer therapeutic targets, arguing that inconsistent definitions were holding back clinical translation (<a href="#ref9" class="citation-link">9</a>). Both directions depend on solving the measurement problem above; you cannot reliably clear off a cell type you cannot identify.
+      </p>
+
+      <h2 style="font-family: 'Fraunces', serif; font-size: 1.75rem; margin: 2.5rem 0 1rem 0;">Conclusion</h2>
+
+      <p style="margin-bottom: 2.5rem;">
+        In the end, it is the same process that could save your life or slowly work against it; it just depends on when. Cellular senescence isn't simply just "bad aging cells"; it's a defense system that seems to wear out before your body does. Understanding where that switch flips might be one of the more promising paths toward extending a person's healthy lifespan, rather than just managing diseases as they come.
+      </p>
+
+      <hr style="border: 0; border-top: 1px solid #eee; margin: 2rem 0;">
+
+      <h3 style="font-family: 'Fraunces', serif; font-size: 1.4rem; margin-bottom: 1.5rem; color: #555;">References</h3>
+
+      <ol style="font-size: 1rem; line-height: 1.6; color: #666; padding-left: 1.2rem; margin-bottom: 2rem;">
+        <li id="ref1" class="ref-item" style="margin-bottom: 0.75rem;">Huang W, Hickson L, Eirin A, Kirkland J, Lerman L. Cellular senescence: the good, the bad and the unknown. Nature Reviews Nephrology. 2022;18:611-627. doi:10.1038/s41581-022-00601-z</li>
+        <li id="ref2" class="ref-item" style="margin-bottom: 0.75rem;">Calcinotto A, Kohli J, Zagato E, Pellegrini L, Demaria M, Alimonti A. Cellular Senescence: Aging, Cancer, and Injury. Physiological Reviews. 2019;99(2):1047-1078. doi:10.1152/physrev.00020.2018</li>
+        <li id="ref3" class="ref-item" style="margin-bottom: 0.75rem;">Ajoolabady A, Praticò D, Bahijri S, Tuomilehto J, Uversky V, Ren J. Hallmarks of cellular senescence: biology, mechanisms, regulations. Experimental & Molecular Medicine. 2025;57:1482-1491. doi:10.1038/s12276-025-01480-7</li>
+        <li id="ref4" class="ref-item" style="margin-bottom: 0.75rem;">Di Micco R, Krizhanovsky V, Baker D, Di Fagagna DF. Cellular senescence in ageing: from mechanisms to therapeutic opportunities. Nature Reviews Molecular Cell Biology. 2020;22:75-95. doi:10.1038/s41580-020-00314-w</li>
+        <li id="ref5" class="ref-item" style="margin-bottom: 0.75rem;">Herranz N, Gil J. Mechanisms and functions of cellular senescence. The Journal of Clinical Investigation. 2018;128(4):1238-1246. doi:10.1172/jci95148</li>
+        <li id="ref6" class="ref-item" style="margin-bottom: 0.75rem;">Borghesan M, Hoogaars W, Varela-Eirín M, Talma N, Demaria M. A Senescence-Centric View of Aging: Implications for Longevity and Disease. Trends in Cell Biology. 2020. doi:10.1016/j.tcb.2020.07.002</li>
+        <li id="ref7" class="ref-item" style="margin-bottom: 0.75rem;">Kamal NSM, Safuan S, Shamsuddin S, Foroozandeh P. Aging of the cells: Insight into cellular senescence and detection methods. European Journal of Cell Biology. 2020;99(6):151108. doi:10.1016/j.ejcb.2020.151108</li>
+        <li id="ref8" class="ref-item" style="margin-bottom: 0.75rem;">Ogrodnik M, Acosta JC, Adams PD, et al. Guidelines for Minimal Information on Cellular Senescence Experimentation in vivo. Cell. 2024;187:4150-4175. doi:10.1016/j.cell.2024.05.059</li>
+        <li id="ref9" class="ref-item" style="margin-bottom: 0.75rem;">Gorgoulis V, Adams P, Alimonti A, et al. Cellular Senescence: Defining a Path Forward. Cell. 2019;179(4):813-827. doi:10.1016/j.cell.2019.10.005</li>
+      </ol>
+
+    </div>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-block">
+      <p class="footer-name">Asrita Doddi</p>
+      <p class="footer-role">Student Researcher</p>
+    </div>
+
+    <div class="footer-block footer-meta">
+      <p>Life Sciences · Medicine · Biomedical Technology</p>
+      <p>&copy; <span id="year"></span> Asrita Doddi</p>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
